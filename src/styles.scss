@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "SF Pro Text";
+    src: url('./assets/fonts/SFPRODISPLAYBLACKITALIC.OTF');
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    font-display: swap 
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url('./assets/fonts/SFPRODISPLAYBOLD.OTF');
+    font-style: normal;
+    font-weight:700;
+    font-size: 16px;
+    font-display: swap 
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url('./assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF');
+    font-style: italic;
+    font-weight:900;
+    font-size: 16px;
+    font-display: swap 
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url('./assets/fonts/SFPRODISPLAYLIGHTITALIC.OTF');
+    font-style: italic;
+    font-weight:300;
+    font-size: 16px;
+    font-display: swap 
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url('./assets/fonts/SFPRODISPLAYMEDIUM.OTF');
+    font-style: normal;
+    font-weight:500;
+    font-size: 16px;
+    font-display: swap 
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url('./assets/fonts/SFPRODISPLAYREGULAR.OTF');
+    font-style: normal;
+    font-weight:400;
+    font-size: 16px;
+    font-display: swap 
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url('./assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF');
+    font-style: italic;
+    font-weight:600;
+    font-size: 16px;
+    font-display: swap 
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url('./assets/fonts/SFPRODISPLAYTHINITALIC.OTF');
+    font-style: italic;
+    font-weight:100;
+    font-size: 16px;
+    font-display: swap 
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src:url('./assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF');
+    font-style: italic;
+    font-weight:200;
+    font-size: 16px;
+    font-display: swap 
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family: "SF Pro Text", sans-serif;
+}
