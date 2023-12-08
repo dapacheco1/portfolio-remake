@@ -1,0 +1,24 @@
+<div
+    class="w-full h-6 bg-slate-200 shadow-sm font-semibold text-sm backdrop-blur-sm opacity-70 flex flex-row px-4 -z-10  gap-3 justify-between">
+    <!-- main actions -->
+    <div class="flex flex-row">
+        <button class="hover:bg-white px-2" (click)="manageMenuTab()" type="button" cdkOverlayOrigin
+            #trigger="cdkOverlayOrigin">File</button>
+        <button class="hover:bg-white px-2">Terminal</button>
+        <button class="hover:bg-white px-2">Explorer</button>
+        <button class="hover:bg-white px-2">Help</button>
+        <button class="hover:bg-white px-2">About OS</button>
+        <!-- open and close component as menu -->
+        <ng-template cdkConnectedOverlay cdkConnectedOverlayBackdropClass="cdk-overlay-transparent-backdrop"
+            [cdkConnectedOverlayHasBackdrop]="true" (backdropClick)="menuTabStatus = false"
+            [cdkConnectedOverlayOrigin]="trigger" [cdkConnectedOverlayOpen]="menuTabStatus">
+            <os-menu-tab [selectedOption]="'file'" [navListOptions]="navList"
+                class="backdrop-blur-xl opacity-80 top-6 left-5 w-48 h-auto p-3 border-solid border-slate-300 border rounded-b-md bg-slate-50"></os-menu-tab>
+        </ng-template>
+
+    </div>
+    <!-- device information -->
+    <div class="flex flex-row gap-3">
+        {{currentDate}}
+    </div>
+</div>

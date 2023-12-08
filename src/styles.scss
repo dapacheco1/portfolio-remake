@@ -78,6 +78,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '@angular/cdk/overlay-prebuilt.css';
 *{
     font-family: "SF Pro Text", sans-serif;
 }
